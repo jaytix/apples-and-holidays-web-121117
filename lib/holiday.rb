@@ -54,6 +54,7 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons,holidays|
+    puts "#{seasons.to_s.capitalize}:"
       holidays.each do |day, supplies|
         #binding.pry
         if day.to_s.include?("_")
@@ -69,11 +70,9 @@ def all_supplies_in_holidays(holiday_hash)
           if supplies.length > 1
               supplies.each do |supply|
                 str = supplies.join(", ")
-                puts "#{seasons.to_s.capitalize}:"
                 puts "  #{joined}: #{str}"
             end
           else
-            puts "#{seasons.to_s.capitalize}:"
             puts "  #{joined}: #{supplies[0]}"
           end
         end
