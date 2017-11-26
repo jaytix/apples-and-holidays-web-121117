@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       word.capitalize!
       words.join(" ")
       holiday.each do |day, supplies|
-        #binding.pry
+        binding.pry
           if supplies.length > 1
               supplies.each do |supply|
                 str = supplies.join(", ")
@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
             puts "  #{day.to_s.capitalize}: #{supplies[0]}"
           end
       end
-    end  
+    end
   end
 end
 
