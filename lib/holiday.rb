@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
             end
           else
             puts "#{seasons.to_s.capitalize}:"
-            puts "  #{words}: #{supplies[0]}"
+            puts "  #{words.join(" ")}: #{supplies[0]}"
           end
         end
       end
