@@ -55,7 +55,7 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons,holidays|
       holidays.each do |day, supplies|
-        #binding.pry
+        binding.pry
         if day.to_s.include?("_")
         words = day.to_s.split("_")
         words.each do |word|
