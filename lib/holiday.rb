@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
       word.capitalize!
       words.join(" ")
       end
-    end  
+    end
       holiday.each do |day, supplies|
         #binding.pry
           if supplies.length > 1
@@ -90,6 +90,6 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
-  
+
   array
 end
