@@ -53,11 +53,11 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |seasons,holiday|
-      holiday.each do |day, supplies|
+  holiday_hash.each do |seasons,holidays|
+      holidays.each do |day, supplies|
         binding.pry
-        if holiday.to_s.include?("_")
-        words = holiday.to_s.split("_")
+        if day.to_s.include?("_")
+        words = day.to_s.split("_")
         words.each do |word|
           word.capitalize!
           words.join(" ")
