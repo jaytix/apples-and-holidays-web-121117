@@ -70,7 +70,6 @@ def all_supplies_in_holidays(holiday_hash)
           if supplies.length > 1
                 str = supplies.join(", ")
                 puts "  #{joined}: #{str}"
-            end
           else
             puts "  #{joined}: #{supplies[0]}"
           end
