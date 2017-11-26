@@ -61,7 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
         words.each do |word|
           word.capitalize!
           words.join(" ")
-          #binding.pry
           end
         end
           if supplies.length > 1
