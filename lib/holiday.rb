@@ -54,13 +54,13 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons,holiday|
-    #binding.pry
+    binding.pry
     words = seasons.split("_")
     words.each do |word|
       word.capitalize!
       words.join(" ")
       holiday.each do |day, supplies|
-        binding.pry
+        #binding.pry
           if supplies.length > 1
               supplies.each do |supply|
                 str = supplies.join(", ")
