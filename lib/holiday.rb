@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
         words = day.to_s.split("_")
         words.each do |word|
           word.capitalize!
-          joined = words.join(" ")
+          joined = words
           end
         else
           joined = day.to_s
