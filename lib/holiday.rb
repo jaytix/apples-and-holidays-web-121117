@@ -64,7 +64,6 @@ def all_supplies_in_holidays(holiday_hash)
         else
           joined = day.to_s
         end
-        end
           if supplies.length > 1
               supplies.each do |supply|
                 str = supplies.join(", ")
@@ -78,7 +77,6 @@ def all_supplies_in_holidays(holiday_hash)
         end
       end
     end
-  end
 
 def all_holidays_with_bbq(holiday_hash)
   array = []
