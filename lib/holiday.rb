@@ -68,7 +68,6 @@ def all_supplies_in_holidays(holiday_hash)
           binding.pry
         end
           if supplies.length > 1
-              supplies.each do |supply|
                 str = supplies.join(", ")
                 puts "  #{joined}: #{str}"
             end
