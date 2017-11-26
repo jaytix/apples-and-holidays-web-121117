@@ -79,6 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
             puts "  #{day.to_s.capitalize}: #{supplies[0]}"
           end
       end
+    end  
   end
 end
 
