@@ -52,35 +52,35 @@ def all_winter_holiday_supplies(holiday_hash)
   return newArray.flatten
 end
 
-# def all_supplies_in_holidays(holiday_hash)
-#   # iterate through holiday_hash and print items such that your readout resembles:
-#   # Winter:
-#   #   Christmas: Lights, Wreath
-#   #   New Years: Party Hats
-#   # Summer:
-#   #   Fourth Of July: Fireworks, BBQ
-#   # etc.
-#   holiday_hash.each do |seasons,holiday|
-#     #binding.pry
-#     words = seasons.split("_")
-#     words.each do |word|
-#       word.capitalize!
-#       words.join(" ")
-#       holiday.each do |day, supplies|
-#         binding.pry
-#           if supplies.length > 1
-#               supplies.each do |supply|
-#                 str = supplies.join(", ")
-#                 puts "#{seasons.to_s.capitalize}:"
-#                 puts "  #{day.to_s.capitalize}: #{str}"
-#             end
-#           else
-#             puts "#{seasons.to_s.capitalize}:"
-#             puts "  #{day.to_s.capitalize}: #{supplies[0]}"
-#           end
-#       end
-#   end
-# end
+def all_supplies_in_holidays(holiday_hash)
+  # iterate through holiday_hash and print items such that your readout resembles:
+  # Winter:
+  #   Christmas: Lights, Wreath
+  #   New Years: Party Hats
+  # Summer:
+  #   Fourth Of July: Fireworks, BBQ
+  # etc.
+  holiday_hash.each do |seasons,holiday|
+    #binding.pry
+    words = seasons.split("_")
+    words.each do |word|
+      word.capitalize!
+      words.join(" ")
+      holiday.each do |day, supplies|
+        #binding.pry
+          if supplies.length > 1
+              supplies.each do |supply|
+                str = supplies.join(", ")
+                puts "#{seasons.to_s.capitalize}:"
+                puts "  #{day.to_s.capitalize}: #{str}"
+            end
+          else
+            puts "#{seasons.to_s.capitalize}:"
+            puts "  #{day.to_s.capitalize}: #{supplies[0]}"
+          end
+      end
+  end
+end
 
 def all_holidays_with_bbq(holiday_hash)
   array = []
