@@ -63,7 +63,6 @@ def all_supplies_in_holidays(holiday_hash)
           joined = words.join(" ")
         else
           joined = day.to_s
-        end  
         end
         end
           if supplies.length > 1
