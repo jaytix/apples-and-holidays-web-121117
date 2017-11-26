@@ -85,7 +85,6 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |seasons, holiday|
       holiday.each do |day, supplies|
-
         supplies.each do |supply|
           binding.pry
         if suppy === "BBQ"
@@ -93,4 +92,5 @@ def all_holidays_with_bbq(holiday_hash)
         end
       end
     end
+  end  
 end
