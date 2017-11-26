@@ -55,7 +55,7 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons,holiday|
     #binding.pry
-    if holiday.to_s.includes?("_")
+    if holiday.to_s.include?("_")
     words = holiday.split("_")
     words.each do |word|
       word.capitalize!
