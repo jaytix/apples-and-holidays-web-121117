@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
           joined = words
           end
         else
-          joined = day.to_s
+          joined = day
         end
           if supplies.length > 1
               supplies.each do |supply|
